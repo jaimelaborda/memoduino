@@ -1,0 +1,350 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:arduino
+LIBS:Connectors
+LIBS:memoduino v1-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Arduino_Micro_Socket ARD?
+U 1 1 5929CED0
+P 5750 3600
+F 0 "ARD?" V 5850 3600 60  0000 C CNN
+F 1 "Arduino_Micro_Socket" V 5650 3600 60  0000 C CNN
+F 2 "" H 7550 7350 60  0001 C CNN
+F 3 "" H 7550 7350 60  0001 C CNN
+	1    5750 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Battery BT?
+U 1 1 5929D239
+P 1500 2250
+F 0 "BT?" H 1600 2300 50  0000 L CNN
+F 1 "Battery" H 1600 2200 50  0000 L CNN
+F 2 "Connectors:BATT_CR2032_TE" H 2100 2150 50  0000 C CNN
+F 3 "" V 1500 2290 50  0000 C CNN
+	1    1500 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5929DB88
+P 1500 2600
+F 0 "#PWR?" H 1500 2350 50  0001 C CNN
+F 1 "GND" H 1500 2450 50  0000 C CNN
+F 2 "" H 1500 2600 50  0000 C CNN
+F 3 "" H 1500 2600 50  0000 C CNN
+	1    1500 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L SPST SW?
+U 1 1 5929DC65
+P 2150 1850
+F 0 "SW?" H 2150 1950 50  0000 C CNN
+F 1 "SPST" H 2150 1750 50  0000 C CNN
+F 2 "" H 2150 1850 50  0000 C CNN
+F 3 "" H 2150 1850 50  0000 C CNN
+	1    2150 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 1850 2850 1850
+Wire Wire Line
+	1500 2400 1500 2600
+$Comp
+L VCC #PWR?
+U 1 1 5929DFA2
+P 2850 1750
+F 0 "#PWR?" H 2850 1600 50  0001 C CNN
+F 1 "VCC" H 2850 1900 50  0000 C CNN
+F 2 "" H 2850 1750 50  0000 C CNN
+F 3 "" H 2850 1750 50  0000 C CNN
+	1    2850 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 1850 1500 1850
+Wire Wire Line
+	1500 1850 1500 2100
+Wire Wire Line
+	2850 1850 2850 1750
+$Comp
+L VCC #PWR?
+U 1 1 5929E152
+P 4050 4250
+F 0 "#PWR?" H 4050 4100 50  0001 C CNN
+F 1 "VCC" H 4050 4400 50  0000 C CNN
+F 2 "" H 4050 4250 50  0000 C CNN
+F 3 "" H 4050 4250 50  0000 C CNN
+	1    4050 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 4400 4050 4400
+Wire Wire Line
+	4050 4400 4050 4250
+$Comp
+L GND #PWR?
+U 1 1 5929E248
+P 4250 4650
+F 0 "#PWR?" H 4250 4400 50  0001 C CNN
+F 1 "GND" H 4250 4500 50  0000 C CNN
+F 2 "" H 4250 4650 50  0000 C CNN
+F 3 "" H 4250 4650 50  0000 C CNN
+	1    4250 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 4100 4250 4100
+Wire Wire Line
+	4250 4100 4250 4650
+Wire Wire Line
+	4450 4200 4250 4200
+Connection ~ 4250 4200
+$Comp
+L SW_PUSH_SMALL_H SW?
+U 1 1 5929FD2B
+P 3550 5900
+F 0 "SW?" H 3630 6010 50  0000 C CNN
+F 1 "SW_PUSH_SMALL_H" H 3550 5850 20  0000 C CNN
+F 2 "" H 3550 6100 50  0000 C CNN
+F 3 "" H 3550 6100 50  0000 C CNN
+	1    3550 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 5929FD31
+P 4050 6050
+F 0 "R?" H 4080 6070 50  0000 L CNN
+F 1 "10k" H 4080 6010 50  0000 L CNN
+F 2 "" H 4050 6050 50  0000 C CNN
+F 3 "" H 4050 6050 50  0000 C CNN
+	1    4050 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 5900 4050 5950
+$Comp
+L GND #PWR?
+U 1 1 5929FD38
+P 4050 6250
+F 0 "#PWR?" H 4050 6000 50  0001 C CNN
+F 1 "GND" H 4050 6100 50  0000 C CNN
+F 2 "" H 4050 6250 50  0000 C CNN
+F 3 "" H 4050 6250 50  0000 C CNN
+	1    4050 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 6150 4050 6250
+Text GLabel 4300 5900 2    60   Input ~ 0
+ButtonYellow
+Connection ~ 4050 5900
+Wire Wire Line
+	3700 5900 4300 5900
+$Comp
+L SW_PUSH_SMALL_H SW?
+U 1 1 5929FD42
+P 3550 6550
+F 0 "SW?" H 3630 6660 50  0000 C CNN
+F 1 "SW_PUSH_SMALL_H" H 3550 6500 20  0000 C CNN
+F 2 "" H 3550 6750 50  0000 C CNN
+F 3 "" H 3550 6750 50  0000 C CNN
+	1    3550 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 5929FD48
+P 4050 6700
+F 0 "R?" H 4080 6720 50  0000 L CNN
+F 1 "10k" H 4080 6660 50  0000 L CNN
+F 2 "" H 4050 6700 50  0000 C CNN
+F 3 "" H 4050 6700 50  0000 C CNN
+	1    4050 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 6550 4050 6600
+$Comp
+L GND #PWR?
+U 1 1 5929FD4F
+P 4050 6900
+F 0 "#PWR?" H 4050 6650 50  0001 C CNN
+F 1 "GND" H 4050 6750 50  0000 C CNN
+F 2 "" H 4050 6900 50  0000 C CNN
+F 3 "" H 4050 6900 50  0000 C CNN
+	1    4050 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 6800 4050 6900
+Text GLabel 4300 6550 2    60   Input ~ 0
+ButtonBlue
+Connection ~ 4050 6550
+Wire Wire Line
+	3700 6550 4300 6550
+$Comp
+L VCC #PWR?
+U 1 1 592A0174
+P 3400 5450
+F 0 "#PWR?" H 3400 5300 50  0001 C CNN
+F 1 "VCC" H 3400 5600 50  0000 C CNN
+F 2 "" H 3400 5450 50  0000 C CNN
+F 3 "" H 3400 5450 50  0000 C CNN
+	1    3400 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 5450 3400 6350
+Wire Wire Line
+	3100 5900 3400 5900
+Wire Wire Line
+	3100 6550 3400 6550
+Connection ~ 3100 5900
+$Comp
+L SW_PUSH_SMALL_H SW?
+U 1 1 592A0458
+P 1550 5900
+F 0 "SW?" H 1630 6010 50  0000 C CNN
+F 1 "SW_PUSH_SMALL_H" H 1550 5850 20  0000 C CNN
+F 2 "" H 1550 6100 50  0000 C CNN
+F 3 "" H 1550 6100 50  0000 C CNN
+	1    1550 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 592A045E
+P 2050 6050
+F 0 "R?" H 2080 6070 50  0000 L CNN
+F 1 "10k" H 2080 6010 50  0000 L CNN
+F 2 "" H 2050 6050 50  0000 C CNN
+F 3 "" H 2050 6050 50  0000 C CNN
+	1    2050 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 5900 2050 5950
+$Comp
+L GND #PWR?
+U 1 1 592A0465
+P 2050 6250
+F 0 "#PWR?" H 2050 6000 50  0001 C CNN
+F 1 "GND" H 2050 6100 50  0000 C CNN
+F 2 "" H 2050 6250 50  0000 C CNN
+F 3 "" H 2050 6250 50  0000 C CNN
+	1    2050 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 6150 2050 6250
+Text GLabel 2300 5900 2    60   Input ~ 0
+ButtonRed
+Connection ~ 2050 5900
+Wire Wire Line
+	1700 5900 2300 5900
+$Comp
+L SW_PUSH_SMALL_H SW?
+U 1 1 592A046F
+P 1550 6550
+F 0 "SW?" H 1630 6660 50  0000 C CNN
+F 1 "SW_PUSH_SMALL_H" H 1550 6500 20  0000 C CNN
+F 2 "" H 1550 6750 50  0000 C CNN
+F 3 "" H 1550 6750 50  0000 C CNN
+	1    1550 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R?
+U 1 1 592A0475
+P 2050 6700
+F 0 "R?" H 2080 6720 50  0000 L CNN
+F 1 "10k" H 2080 6660 50  0000 L CNN
+F 2 "" H 2050 6700 50  0000 C CNN
+F 3 "" H 2050 6700 50  0000 C CNN
+	1    2050 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 6550 2050 6600
+$Comp
+L GND #PWR?
+U 1 1 592A047C
+P 2050 6900
+F 0 "#PWR?" H 2050 6650 50  0001 C CNN
+F 1 "GND" H 2050 6750 50  0000 C CNN
+F 2 "" H 2050 6900 50  0000 C CNN
+F 3 "" H 2050 6900 50  0000 C CNN
+	1    2050 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 6800 2050 6900
+Text GLabel 2300 6550 2    60   Input ~ 0
+ButtonGreen
+Connection ~ 2050 6550
+Wire Wire Line
+	1700 6550 2050 6550
+$Comp
+L VCC #PWR?
+U 1 1 592A0486
+P 1100 5650
+F 0 "#PWR?" H 1100 5500 50  0001 C CNN
+F 1 "VCC" H 1100 5800 50  0000 C CNN
+F 2 "" H 1100 5650 50  0000 C CNN
+F 3 "" H 1100 5650 50  0000 C CNN
+	1    1100 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 5650 1100 6550
+Wire Wire Line
+	1100 5900 1400 5900
+Wire Wire Line
+	1100 6550 1400 6550
+Connection ~ 1100 5900
+$EndSCHEMATC
